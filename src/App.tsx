@@ -177,9 +177,9 @@ function App() {
                 </div>
                 <div className="code-content" aria-hidden="true">
                   <div><span className="code-number">01</span><span className="code-purple">const</span> <span className="code-cyan">developer</span> = {"{"}</div>
-                  <div><span className="code-number">02</span>  name: <span className="code-green">"Saravana"</span>,</div>
+                  <div><span className="code-number">02</span>  name: <span className="code-green">"Saravana Kumar M"</span>,</div>
                   <div><span className="code-number">03</span>  focus: [</div>
-                  <div><span className="code-number">04</span>    <span className="code-green">"React"</span>, <span className="code-green">"TypeScript"</span>,</div>
+                  <div><span className="code-number">04</span>    <span className="code-green">"JavaScript"</span>, <span className="code-green">"React"</span>, <span className="code-green">"TypeScript"</span>,</div>
                   <div><span className="code-number">05</span>    <span className="code-green">"Node.js"</span>, <span className="code-green">"SQL"</span></div>
                   <div><span className="code-number">06</span>  ],</div>
                   <div><span className="code-number">07</span>  mindset: <span className="code-green">"build with care"</span></div>
