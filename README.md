@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# Saravana Kumar M — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A responsive, single-page portfolio built with React, TypeScript, and Vite. The project keeps portfolio content and technology-icon mappings in `src/data/portfolio.ts`, uses bundled Simple Icons from `react-icons`, and uses text marks where no suitable brand icon is available. Project previews can use local screenshots or CSS illustrations; no external image service or analytics is required.
 
-## Available Scripts
+## Local development
 
-In the project directory, you can run:
+```powershell
+npm install
+npm start
+```
 
-### `npm start`
+Vite prints the local development URL in the terminal.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Production build
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```powershell
+npm run build
+npm run preview
+```
 
-### `npm test`
+The production site is generated in `dist/`.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Projects
 
-### `npm run build`
+Add, edit, reorder, feature, or remove projects in the `projects` array in `src/data/portfolio.ts`. Each project has a unique `id`, title, category, description, and technology list. Optional fields support status, professional/personal classification, features, contributions, implementation notes, screenshots, supported CSS illustrations, external links, and case-study details. Add any verified projects here; there is no requirement that every portfolio project appear on a resume.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Set `featured: true` to show a project in the featured layout; leave it unset or set it to `false` for a regular card. Array order controls the order within the featured and regular project groups. Set `status` or `workType` only when the project details are confirmed. Provide screenshot `src` and meaningful `alt` text, or add only verified GitHub, live-demo, and case-study URLs. Projects without screenshots or a supported illustration render without a fabricated preview. Files in `public/` are copied directly into the deployment, so only add screenshots that are cleared for public sharing and contain no private or confidential information.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Resume
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The resume PDF is served from:
 
-### `npm run eject`
+`public/resume/Saravana_Kumar_Resume.pdf`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Resume buttons check for a PDF at this path before starting the download. Review the document and its personal information before publishing.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Portfolio details to supply
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Add verified GitHub and LinkedIn URLs before publishing them.
+- Add verified project repository or live-demo URLs when available.
+- Ensure every screenshot in `public/images/projects/` is authorized and privacy-checked before publishing; Vite copies all of `public/` into the production output.
+- Original screenshots currently remain in the ignored `local-private-assets/project-screenshots/` folder and are not included in the site. Add only sanitized, approved replacements to `public/images/projects/`.
+- Confirm current employment status and update the experience date in `src/App.tsx` if appropriate.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deploy to Vercel
 
-## Learn More
+1. Push the project to a Git repository and import that repository in Vercel, or install the Vercel CLI and run `vercel` from the project directory.
+2. Use the default Vite settings: build command `npm run build`, output directory `dist`, and install command `npm install`.
+3. Deploy with the Vercel dashboard or run `vercel --prod` after linking the project.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This repository is prepared for deployment; the site has not been deployed by this project setup.
