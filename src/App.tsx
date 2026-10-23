@@ -362,9 +362,6 @@ function App() {
         ref={imageDialogRef}
         aria-label={projectImagePreview ? `${projectImagePreview.projectName} project image` : "Project image"}
         onClose={() => setProjectImagePreview(null)}
-        onKeyDown={(event) => {
-          if (event.key === "Escape") imageDialogRef.current?.close();
-        }}
         onClick={(event) => {
           if (event.target === event.currentTarget) imageDialogRef.current?.close();
         }}

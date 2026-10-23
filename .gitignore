@@ -15,11 +15,6 @@
 
 # misc
 .DS_Store
-.vercel
-/local-private-assets/
-.env
-.env.*
-!.env.example
 .env.local
 .env.development.local
 .env.test.local

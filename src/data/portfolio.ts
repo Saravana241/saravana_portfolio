@@ -144,6 +144,12 @@ export const projects: Project[] = [
     ],
     implementation:
       "A React frontend communicates with authenticated REST endpoints implemented in Node.js and Express.js. PostgreSQL stores application data; Cloudflare R2 handles resume and file storage.",
+    screenshots: [
+      {
+        src: "/images/projects/medhire_collage.png",
+        alt: "MedHire project screenshot",
+      },
+    ],
     visual: "medhire",
     featured: true,
     caseStudy: {
@@ -171,6 +177,12 @@ export const projects: Project[] = [
     ],
     implementation:
       "The application combines a React and TypeScript interface, Redux state management, and Node.js services backed by MySQL. Payment and email providers are intentionally not specified.",
+    screenshots: [
+      {
+        src: "/images/projects/cvhaven_collage.png",
+        alt: "CVhaven project screenshot",
+      },
+    ],
     visual: "cvclique",
   },
   {
@@ -188,6 +200,12 @@ export const projects: Project[] = [
     ],
     implementation:
       "Role-aware React interfaces work with Node.js application services and MySQL data. This portfolio describes project functionality and does not imply a live medical service or certification.",
+    screenshots: [
+      {
+        src: "/images/projects/smartmedik_collage.png",
+        alt: "Healthcare Management System project screenshot",
+      },
+    ],
     visual: "healthcare",
   },
 ];
